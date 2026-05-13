@@ -4,7 +4,12 @@ if(!global.loss){
 	}
 }
 
+if( y >= 352 || y <= 0){
+	stopGame()
+}
+
 if(global.loss){
 	hspeed = -2
 	image_angle += 4
 }
+
