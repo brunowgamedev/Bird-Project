@@ -1,0 +1,1 @@
+if(global.loss) hspeed = 0;
