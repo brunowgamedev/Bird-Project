@@ -7,11 +7,12 @@ fishCount = 0;
 global.level = 1
 global.pointList = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
 
+//Variavel com o destino da transicao
+global.destino = rm_game
+
 //Variável para saber se a transição foi iniciada
 global.transicao = false
 
-//Variavel com o destino da transicao
-global.destino = rm_game
 
 #endregion
 
@@ -36,8 +37,11 @@ function stopGame(){
 	layer_hspeed("bg_treesReflection", 0);
 	layer_hspeed("bg_waterReflection", 0);
 	
+	
+	
 	//Reiniciando o jogo em 1 segundo
 	alarm[0] = game_get_speed(gamespeed_fps) * 2
+	
 	
 	global.destino = rm_start
 	
@@ -46,7 +50,13 @@ function stopGame(){
 }
 
 function muda_room(){
+	global.transicao = true
 	room_goto(global.destino)
 }
+
+function finaliza_transicao(){
+	global.transicao = false
+}
+	
 
 #endregion
