@@ -7,6 +7,9 @@ if(!global.loss){
 		if (global.totalPoints >= _pointsNeeded ){
 			global.level++
 			
+			//Tocando som
+			audio_play_sound(snd_levelUp, 0, 0)
+			
 			//Acelerando background
 			layer_hspeed("bg_trees" , -global.level)
 			layer_hspeed("bg_treesReflection",  -global.level);

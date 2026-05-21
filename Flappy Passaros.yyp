@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -53,6 +54,9 @@
     {"id":{"name":"sq_01","path":"sequences/sq_01/sq_01.yy",},},
     {"id":{"name":"sq_02","path":"sequences/sq_02/sq_02.yy",},},
     {"id":{"name":"sq_inicio","path":"sequences/sq_inicio/sq_inicio.yy",},},
+    {"id":{"name":"snd_background","path":"sounds/snd_background/snd_background.yy",},},
+    {"id":{"name":"snd_collect","path":"sounds/snd_collect/snd_collect.yy",},},
+    {"id":{"name":"snd_levelUp","path":"sounds/snd_levelUp/snd_levelUp.yy",},},
     {"id":{"name":"obj_itemColision","path":"sprites/obj_itemColision/obj_itemColision.yy",},},
     {"id":{"name":"spr_bg_moon","path":"sprites/spr_bg_moon/spr_bg_moon.yy",},},
     {"id":{"name":"spr_bg_moonReflection","path":"sprites/spr_bg_moonReflection/spr_bg_moonReflection.yy",},},
@@ -74,8 +78,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"roomId":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "templateType":"game",
