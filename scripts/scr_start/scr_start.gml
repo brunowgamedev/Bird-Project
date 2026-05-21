@@ -3,7 +3,7 @@
 global.loss = false;
 global.showStats = false;
 global.totalPoints = 0
-fishCount = 0;
+fishCount = 10;
 global.level = 1
 global.pointList = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
 
@@ -12,6 +12,11 @@ global.destino = rm_game
 
 //Variável para saber se a transição foi iniciada
 global.transicao = false
+
+//Variável global para saber que item está bloqueado
+global.itens_locked = [false, true, true]
+
+global.sprite_player = spr_bird1
 
 
 #endregion
