@@ -1,3 +1,7 @@
+
+//Iniciando debug para ver framerate do jogo
+//show_debug_overlay(true)
+
 #region global variables
 
 global.loss = false;
@@ -6,6 +10,7 @@ global.totalPoints = 0
 fishCount = 10;
 global.level = 1
 global.pointList = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
+global.effectsOn = true;
 
 //Variavel com o destino da transicao
 global.destino = rm_game
@@ -61,6 +66,21 @@ function muda_room(){
 
 function finaliza_transicao(){
 	global.transicao = false
+}
+
+function effectOnOff ()
+{
+	if (global.effectsOn){
+	layer_enable_fx("leaf_effect", 1);
+	layer_enable_fx("water_effect", 1);
+	layer_enable_fx("fish", 1);
+}
+else
+{
+	layer_enable_fx("leaf_effect", 0);
+	layer_enable_fx("water_effect", 0)
+	layer_enable_fx("fish", 0);
+}
 }
 	
 

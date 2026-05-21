@@ -3,3 +3,5 @@ if(!global.loss){
 }else{
 	hspeed = 0	
 }
+
+if (x < -64) instance_destroy();

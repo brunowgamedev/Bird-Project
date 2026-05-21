@@ -1,1 +1,1 @@
-image_speed = 1;
+if(!locked) image_speed = 1;
